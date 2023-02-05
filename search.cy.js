@@ -15,6 +15,5 @@ describe('Checking search', () => {
         //Results not be visible
         cy.get('#ac-localeswitcher').click();
         cy.get('#ac-gn-searchresults').should('not.be.visible');
-
     });
 });
