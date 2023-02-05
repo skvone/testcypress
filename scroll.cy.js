@@ -3,7 +3,7 @@ describe('Checking search', () => {
         //Open
         cy.visit('https://www.apple.com/');
         cy.viewport(1600, 1000);
-        //Click
+        //Scrolling to an element
         cy.get('[data-analytics-title="site map"]').scrollIntoView();
         //Input
         cy.get('[data-analytics-title="site map"]').should('be.visible');
