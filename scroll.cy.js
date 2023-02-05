@@ -7,6 +7,7 @@ describe('Checking search', () => {
         cy.get('[data-analytics-title="site map"]').scrollIntoView();
         //Input
         cy.get('[data-analytics-title="site map"]').should('be.visible');
+        //Scroll up
         cy.scrollTo('top');
         cy.get('.ac-gf-directory').should('not.be.visible');
     });
